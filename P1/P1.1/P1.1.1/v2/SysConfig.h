@@ -1,0 +1,1 @@
+#define SYS_FREQ		(80000000)

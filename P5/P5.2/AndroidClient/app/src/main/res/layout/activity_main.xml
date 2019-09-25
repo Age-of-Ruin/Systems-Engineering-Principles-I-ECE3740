@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BACKGROUND"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.constantine.rick.androidclient.clientGUI.ClientGUI">
+
+    <EditText
+        android:id="@+id/PORT_NUMBER_TEXT_FIELD"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:ems="10"
+        android:inputType="text"
+        android:text="7777"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ENTER_PORT_NUMBER_BUTTON"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="96dp"
+        android:onClick="portNumberButtonHandler"
+        android:text="Enter Port #"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PORT_NUMBER_TEXT_FIELD" />
+
+    <TextView
+        android:id="@+id/LED_CONTROL_LABEL"
+        android:layout_width="66dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="332dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="LED Control"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/READ_PB_LABEL"
+        android:layout_width="66dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="356dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="Read PB's"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/READ_PB1_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="PB1ButtonHandler"
+        android:text="Read PB1"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/READ_PB_LABEL" />
+
+    <Button
+        android:id="@+id/READ_PB2_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="PB2ButtonHandler"
+        android:text="Read PB2"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/READ_PB1_BUTTON" />
+
+    <Button
+        android:id="@+id/READ_PB3_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="PB3ButtonHandler"
+        android:text="Read PB3"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/READ_PB2_BUTTON" />
+
+    <TextView
+        android:id="@+id/SERVER_MESSAGE_TEXT_FIELD"
+        android:layout_width="192dp"
+        android:layout_height="281dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SERVER_MESSAGE_LABEL"
+        android:layout_width="165dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Server Messages"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GET_TEMP_BUTTON"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="296dp"
+        android:layout_marginStart="52dp"
+        android:onClick="getTempButtonHandler"
+        android:text="Get Temp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/IP_ADDRESS_TEXT_FIELD"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:ems="10"
+        android:inputType="text"
+        android:text="10.0.2.2"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ENTER_IP_ADDRESS_BUTTON"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:onClick="IPButtonHandler"
+        android:text="ENTER IP"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IP_ADDRESS_TEXT_FIELD" />
+
+    <Button
+        android:id="@+id/LED2_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="8dp"
+        android:onClick="LED2ButtonHandler"
+        android:text="LED2"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LED1_BUTTON" />
+
+    <Button
+        android:id="@+id/LED3_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="8dp"
+        android:onClick="LED3ButtonHandler"
+        android:text="LED3"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LED2_BUTTON" />
+
+    <Button
+        android:id="@+id/LED4_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="8dp"
+        android:onClick="LED4ButtonHandler"
+        android:text="LED4"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LED3_BUTTON" />
+
+    <Button
+        android:id="@+id/LED1_BUTTON"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginTop="8dp"
+        android:onClick="LED1ButtonHandler"
+        android:text="LED1"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LED_CONTROL_LABEL" />
+
+    <Button
+        android:id="@+id/CONNECT_BUTTON"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="30dp"
+        android:onClick="connectButtonHandler"
+        android:text="CONNECT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DISCONNECT_BUTTON"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:onClick="disconnectButtonHandler"
+        android:text="DISCONNECT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CONNECT_BUTTON" />
+
+    <Button
+        android:id="@+id/GET_TIME_BUTTON"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:onClick="getTimeButtonHandler"
+        android:text="Get Time"
+        app:layout_constraintBottom_toTopOf="@+id/GET_TEMP_BUTTON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/QUIT_BUTTON"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:onClick="quitButtonHandler"
+        android:text="Quit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DISCONNECT_BUTTON" />
+
+</android.support.constraint.ConstraintLayout>

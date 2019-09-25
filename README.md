@@ -1,0 +1,2 @@
+# Systems Engineering Principles I (ECE3740)
+Learned the basics of IOT design with a focus on object oriented design. This involved utilizing C and Java along with the Cerebot MX7cK, Netbeans IDE, and Android Studio to produce a client-server system capable of reading various sensors and interacting with the SoC board wirelessly using GUI developed within Android Studio.
